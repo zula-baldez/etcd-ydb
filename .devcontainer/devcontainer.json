@@ -1,0 +1,25 @@
+{
+  "name": "etcd-ydb-devcontainer",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "etcd-ydb",
+  "runServices": [
+    "etcd",
+    "ydb"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "golang.go"
+      ]
+    }
+  },
+  "forwardPorts": [
+    22379,
+    22380
+  ],
+  "workspaceFolder": "/workspaces/etcd-ydb",
+  "shutdownAction": "stopCompose"
+}
