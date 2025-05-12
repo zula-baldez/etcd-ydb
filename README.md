@@ -1,5 +1,7 @@
 # etcd-ydb
 
+Etcd degradates after achieving critical amount of data. Etcd developers recommend not to store more than 8GB in cluster. The idea of the project is to overcome this obstacle by creating a system, implementing etcd API, that is able to work with large amount of data and providing the same garantees as etcd - fault-tolerance and strong constitency.
+
 ## Prerequisites
 
 ### devcontainers/cli
